@@ -28,20 +28,44 @@ jobs:
         with:
           node-version: 22
 
-      - name: Pengujian
+      - name: Pengujian (tidak memblokir refresh data)
+        # Data yang basi lebih berbahaya daripada test yang gagal, jadi kegagalan
+        # test tidak menghentikan pemutakhiran; statusnya tetap dilaporkan di bawah.
+        continue-on-error: true
         run: npm test
 
       - name: Perbarui data dari sumber resmi
         run: node src/scripts/refresh.js --force
 
+      - name: Siapkan dataset tahun berikutnya bila belum ada
+        # Tahun baru tetap punya jawaban (status draft + tentative) walau SKB belum terbit.
+        run: |
+          NEXT_YEAR=$(( $(date -u +%Y) + 1 ))
+          if [ ! -f "data/skb/$NEXT_YEAR.json" ]; then
+            node src/scripts/new-year.js --year "$NEXT_YEAR" --write
+          else
+            echo "data/skb/$NEXT_YEAR.json sudah ada, dilewati."
+          fi
+
       - name: Ringkasan hasil
         run: |
+          node src/scripts/report.js > refresh-report.md
+          cat refresh-report.md >> "$GITHUB_STEP_SUMMARY"
           {
-            echo "### Pemutakhiran data"
             echo '```'
-            node -e "const fs=require('fs');const p='data/cache/state.json';if(fs.existsSync(p)){const s=JSON.parse(fs.readFileSync(p,'utf8'));const o=s.lastRun?.results?.official;console.log('artikel resmi:',o?.articleCount??0);for(const r of o?.results??[])console.log(r.year,r.via,r.status,JSON.stringify(r.counts));}" 
+            cat refresh-report.md
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Kirim notifikasi bila ada masalah
+        env:
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: |
+          if [ -z "$ALERT_WEBHOOK_URL" ]; then
+            echo "ALERT_WEBHOOK_URL belum diset; notifikasi dilewati."
+            exit 0
+          fi
+          node src/scripts/alert.js refresh-report.md "$ALERT_WEBHOOK_URL"
 
       - name: Commit perubahan data
         run: |

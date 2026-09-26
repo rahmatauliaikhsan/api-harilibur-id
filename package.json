@@ -13,6 +13,8 @@
     "dev": "node --watch src/server.js",
     "refresh": "node src/scripts/refresh.js",
     "refresh:official": "node src/scripts/refresh.js --official",
+    "new-year": "node src/scripts/new-year.js",
+    "report": "node src/scripts/report.js",
     "fixtures": "node src/scripts/make-fixtures.js",
     "test": "node --test test/api.test.js"
   },

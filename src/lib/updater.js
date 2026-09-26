@@ -103,7 +103,15 @@ export class Updater {
 
   defaultYears() {
     const currentYear = Number(todayISO().slice(0, 4));
-    const years = new Set([currentYear, currentYear + 1, currentYear + 2, ...this.curatedYears]);
+    // Jendela 3 tahun ke depan: SKB biasanya terbit sekitar Sep-Nov tahun
+    // sebelumnya, jadi tahun berikutnya perlu dipantau lebih awal.
+    const years = new Set([
+      currentYear,
+      currentYear + 1,
+      currentYear + 2,
+      currentYear + 3,
+      ...this.curatedYears,
+    ]);
     return [...years].filter((y) => y >= 2020 && y <= currentYear + 3).sort((a, b) => a - b);
   }
 

@@ -330,8 +330,64 @@ jadi data di URL produksi tetap fresk tanpa perlu server hidup permanen.
 ### GitHub Actions
 
 Berkas `.github/workflows/refresh.yml` sudah tersedia: menjalankan pengujian,
-memperbarui data harian dari sumber resmi, dan meng-commit perubahan
-`data/cache/` serta `data/skb/` bila ada.
+memperbarui data harian dari sumber resmi, menyiapkan dataset tahun berikutnya,
+dan meng-commit perubahan `data/cache/` serta `data/skb/` bila ada.
+
+Sifat penting workflow ini:
+
+- **Test tidak memblokir data.** `npm test` memakai `continue-on-error: true`,
+  karena data basi lebih detrimental daripada test yang gagal.
+- **Tahun baru disiapkan otomatis.** Bila `data/skb/<tahun+1>.json` belum ada,
+  workflow memanggil `npm run new-year` sehingga tahun depan tetap punya jawaban
+  (status `draft`, semua entri `tentative`).
+- **Ringkasan + notifikasi.** `npm run report` menulis ringkasan Markdown ke
+  GitHub Step Summary. Bila ada error sumber, artikel ditolak, atau tahun draft,
+  `src/scripts/alert.js` mengirim webhook (Discord/Slack/Telegram) bila secret
+  `ALERT_WEBHOOK_URL` diset. Kegagalan notifikasi tidak menggagalkan workflow.
+
+Menjalankan manual dari GitHub: tab **Actions → refresh-data → Run workflow**
+(opsi `force` untuk memaksa ambil ulang semua sumber). Setelan lokal:
+
+```bash
+npm run refresh -- --force   # tarik data resmi + komunitas
+npm run report               # ringkasan Markdown di stdout
+npm run new-year -- --year 2029 --write
+```
+
+## Menjamin data tetap segar
+
+`GET /api/meta` menyertakan blok `freshness` supaya aplikasi bisa monitoring
+tanpa bergantung pada GitHub:
+
+```json
+"freshness": {
+  "dataAgeDays": 0,
+  "communityAgeDays": 0,
+  "officialAgeDays": 0,
+  "oldestFetchedAt": "2026-09-26T12:34:56.063Z",
+  "ttlDays": 1,
+  "draftYears": [2028],
+  "staleWarning": null
+}
+```
+
+`staleWarning` berisi pesan bila data melewati ambang TTL, dan `draftYears`
+mencatat tahun yang datanya belum resmi. Contoh pemeriksaan sederhana:
+
+```javascript
+const { data } = await (await fetch(`${API}/api/meta`)).json();
+if (data.freshness.staleWarning) console.warn(data.freshness.staleWarning);
+```
+
+### Tahun berstatus draft
+
+Tahun yang SKB resminya belum terbit dilayani dengan `status: "draft"` dan
+`isDraft: true` di `/api/years`. Seluruh entri ditandai `tentative: true` dan
+`counts.joint_leave` bernilai 0 karena cuti bersama memang belum bisa diketahui
+dari sumber komunitas. Jangan memakai tahun draft untuk keputusan resmi; jalankan
+`npm run refresh -- --force` setelah artikel SKB terbit, lalu ubah
+`data/skb/<tahun>.json` dari `status: "draft"` menjadi `"official"` beserta nomor
+SKB, `signedAt`, dan `sourceUrl` setelah dicocokkan dengan lampiran resmi.
 
 ## Catatan & batasan
 

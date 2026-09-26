@@ -1,0 +1,67 @@
+{
+  "year": 2028,
+  "status": "draft",
+  "skb": {
+    "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2028",
+    "numbers": [],
+    "signedAt": null,
+    "sourceUrl": null,
+    "amendments": []
+  },
+  "entries": [
+    {
+      "date": "2028-01-01",
+      "name": "Tahun Baru Masehi",
+      "type": "national_holiday",
+      "tentative": true
+    },
+    {
+      "date": "2028-04-14",
+      "name": "Wafat Isa Almasih",
+      "type": "national_holiday",
+      "tentative": true
+    },
+    {
+      "date": "2028-04-16",
+      "name": "Paskah",
+      "type": "national_holiday",
+      "tentative": true
+    },
+    {
+      "date": "2028-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "national_holiday",
+      "tentative": true
+    },
+    {
+      "date": "2028-05-25",
+      "name": "Kenaikan Isa Almasih",
+      "type": "national_holiday",
+      "tentative": true
+    },
+    {
+      "date": "2028-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "national_holiday",
+      "tentative": true
+    },
+    {
+      "date": "2028-08-17",
+      "name": "Hari Ulang Tahun Kemerdekaan Republik Indonesia",
+      "type": "national_holiday",
+      "tentative": true
+    },
+    {
+      "date": "2028-12-25",
+      "name": "Hari Raya Natal",
+      "type": "national_holiday",
+      "tentative": true
+    }
+  ],
+  "notes": [
+    "Draft otomatis: disusun dari feed komunitas, BELUM berdasarkan SKB 3 Menteri resmi.",
+    "SKB biasanya terbit sekitar September-November tahun sebelumnya; jalankan \"npm run refresh\" setelah artikel resmi terbit.",
+    "Cuti bersama belum dapat diketahui dan akan ditambahkan setelah SKB resmi diurai.",
+    "Ubah status menjadi \"official\" dan hapus flag tentative hanya setelah mencocokkan dengan lampiran SKB resmi."
+  ]
+}

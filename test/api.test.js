@@ -310,6 +310,41 @@ describe("HTTP API", () => {
     assert.equal(typeof body.data.conflicts, "object");
   });
 
+  it("GET /api/meta melaporkan kesegaran data untuk monitoring mandiri", async () => {
+    const body = await (await fetch(`${baseUrl}/api/meta`)).json();
+    const freshness = body.data.freshness;
+    assert.ok(freshness, "blok freshness harus ada");
+    // dataAgeDays boleh null saat cache refresh belum pernah terisi.
+    assert.ok(freshness.dataAgeDays === null || typeof freshness.dataAgeDays === "number");
+    assert.equal(typeof freshness.ttlDays, "number");
+    assert.ok(Array.isArray(freshness.draftYears));
+    // staleWarning boleh null (data segar) atau string berisi pesan.
+    assert.ok(freshness.staleWarning === null || typeof freshness.staleWarning === "string");
+  });
+
+  it("menandai tahun berstatus draft sebagai belum pasti", async () => {
+    const body = await (await fetch(`${baseUrl}/api/holidays/2028`)).json();
+    assert.equal(body.ok, true);
+    assert.equal(body.data.status, "draft");
+    assert.ok(body.data.holidays.length > 0);
+    // Semua entri draft wajib tentative: konsumen tidak boleh menganggapnya final.
+    for (const entry of body.data.holidays) {
+      assert.equal(entry.tentative, true, `entri ${entry.date} harus tentative`);
+    }
+    // Draft tidak boleh mengklaim cuti bersama (feed komunitas tidak memuatnya).
+    assert.equal(body.data.counts.joint_leave, 0);
+  });
+
+  it("GET /api/years menandai tahun draft lewat isDraft", async () => {
+    const body = await (await fetch(`${baseUrl}/api/years`)).json();
+    const draft = body.data.years.find((item) => item.year === 2028);
+    assert.ok(draft, "tahun 2028 harus terdaftar");
+    assert.equal(draft.status, "draft");
+    assert.equal(draft.isDraft, true);
+    const official = body.data.years.find((item) => item.year === 2026);
+    assert.equal(official.isDraft, false);
+  });
+
   it("membangun iCalendar yang valid", () => {
     const ics = buildIcal(
       [

@@ -149,6 +149,46 @@ function parseIntParam(value, { fallback, min, max, field }) {
   return parsed;
 }
 
+/**
+ * Ringkasan kesegaran data untuk monitoring mandiri konsumen.
+ * `staleWarning` diisi bila data melewati ambang sehingga aplikasi bisa
+ * melakukan alerting sendiri tanpa perlu mengecek GitHub Actions.
+ */
+function buildFreshness(store, state, { now = Date.now() } = {}) {
+  const ageDays = (iso) => {
+    if (!iso) return null;
+    const ms = now - Date.parse(iso);
+    return Number.isFinite(ms) ? Math.max(0, Math.round(ms / 86_400_000)) : null;
+  };
+  const timestamps = [
+    store.community?.fetchedAt,
+    store.official?.fetchedAt,
+    state?.community?.refreshedAt,
+    state?.official?.refreshedAt,
+  ].filter(Boolean);
+  const oldest = timestamps.length
+    ? timestamps.reduce((a, b) => (Date.parse(a) <= Date.parse(b) ? a : b))
+    : null;
+  const dataAgeDays = ageDays(oldest);
+  const ttlDays = Math.max(1, Math.round(config.refreshTtlMs / 86_400_000));
+  const draftYears = store.curatedYears().filter((year) => store.curated.get(year)?.status === "draft");
+  const staleWarning =
+    dataAgeDays === null
+      ? "Belum ada data hasil refresh; API memakai dataset SKB terkurasi."
+      : dataAgeDays > ttlDays
+        ? `Data hasil refresh berumur ${dataAgeDays} hari (ambang ${ttlDays} hari). Periksa GitHub Actions.`
+        : null;
+  return {
+    dataAgeDays,
+    communityAgeDays: ageDays(store.community?.fetchedAt ?? state?.community?.refreshedAt),
+    officialAgeDays: ageDays(store.official?.fetchedAt ?? state?.official?.refreshedAt),
+    oldestFetchedAt: oldest,
+    ttlDays,
+    draftYears,
+    staleWarning,
+  };
+}
+
 function storeMeta(store) {
   return {
     dataVersion: store.version,
@@ -318,7 +358,7 @@ async function handleYears(ctx) {
       {
         currentYear: Number(todayISO(config.timezone).slice(0, 4)),
         count: years.length,
-        years,
+        years: years.map((item) => ({ ...item, isDraft: item.status === "draft" })),
       },
       storeMeta(ctx.store),
     ),
@@ -338,6 +378,7 @@ async function handleMeta(ctx) {
           year,
           status,
           sourceKind,
+          isDraft: status === "draft",
           counts,
           skbNumbers: skb?.numbers ?? [],
           skbSignedAt: skb?.signedAt ?? null,
@@ -382,6 +423,7 @@ async function handleMeta(ctx) {
           intervalMs: config.refreshIntervalMs,
           ttlMs: config.refreshTtlMs,
         },
+        freshness: buildFreshness(ctx.store, state),
         disclaimer:
           "Data komunitas hanya pelengkap. Untuk keputusan resmi, rujuk lampiran SKB 3 Menteri terbaru.",
       },
