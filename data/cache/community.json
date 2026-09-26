@@ -1,0 +1,1111 @@
+{
+  "fetchedAt": "2026-09-26T12:34:56.063Z",
+  "entries": [
+    {
+      "date": "2024-01-01",
+      "name": "Tahun Baru Masehi",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "New Year's Day"
+      }
+    },
+    {
+      "date": "2024-03-29",
+      "name": "Wafat Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Good Friday"
+      }
+    },
+    {
+      "date": "2024-03-31",
+      "name": "Paskah",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Easter Sunday"
+      }
+    },
+    {
+      "date": "2024-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Labour Day"
+      }
+    },
+    {
+      "date": "2024-05-09",
+      "name": "Kenaikan Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Ascension Day"
+      }
+    },
+    {
+      "date": "2024-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Pancasila Day"
+      }
+    },
+    {
+      "date": "2024-08-17",
+      "name": "Hari Ulang Tahun Kemerdekaan Republik Indonesia",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Independence Day"
+      }
+    },
+    {
+      "date": "2024-12-25",
+      "name": "Hari Raya Natal",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Christmas Day"
+      }
+    },
+    {
+      "date": "2025-01-01",
+      "name": "Tahun Baru Masehi",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "New Year's Day"
+      }
+    },
+    {
+      "date": "2025-04-18",
+      "name": "Wafat Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Good Friday"
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "name": "Paskah",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Easter Sunday"
+      }
+    },
+    {
+      "date": "2025-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Labour Day"
+      }
+    },
+    {
+      "date": "2025-05-29",
+      "name": "Kenaikan Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Ascension Day"
+      }
+    },
+    {
+      "date": "2025-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Pancasila Day"
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "name": "Hari Ulang Tahun Kemerdekaan Republik Indonesia",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Independence Day"
+      }
+    },
+    {
+      "date": "2025-12-25",
+      "name": "Hari Raya Natal",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Christmas Day"
+      }
+    },
+    {
+      "date": "2026-01-01",
+      "name": "Hari Tahun Baru",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-01-01",
+      "name": "Tahun Baru Masehi",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "New Year's Day"
+      }
+    },
+    {
+      "date": "2026-01-16",
+      "name": "Isra Mikraj Nabi Muhammad",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-02-16",
+      "name": "Cuti Bersama Tahun Baru Imlek",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "name": "Tahun Baru Imlek",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "name": "1 Ramadan",
+      "type": "observance",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Perayaan"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "name": "Cuti Bersama Hari Suci Nyepi (Tahun Baru Saka)",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "name": "Hari Suci Nyepi (Tahun Baru Saka)",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "name": "Cuti Bersama Idul Fitri",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "name": "Hari Idul Fitri",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "name": "Hari Idul Fitri",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-03-23",
+      "name": "Cuti Bersama Idul Fitri",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-03-24",
+      "name": "Cuti Bersama Idul Fitri",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-04-03",
+      "name": "Wafat Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "name": "Hari Paskah",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "name": "Paskah",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Easter Sunday"
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "name": "Hari Buruh Internasional / Pekerja",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Labour Day"
+      }
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Kenaikan Isa Al Masih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Kenaikan Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Ascension Day"
+      }
+    },
+    {
+      "date": "2026-05-15",
+      "name": "Cuti Bersama Kenaikan Isa Al Masih",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-05-27",
+      "name": "Idul Adha (Lebaran Haji)",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "name": "Idul Adha (Lebaran Haji)",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-05-31",
+      "name": "Hari Raya Waisak",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "name": "Hari Kedua Muharram",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "name": "Satu Muharam / Tahun Baru Hijriah",
+      "type": "observance",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Perayaan"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-08-17",
+      "name": "Hari Proklamasi Kemerdekaan R.I.",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-08-17",
+      "name": "Hari Ulang Tahun Kemerdekaan Republik Indonesia",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Independence Day"
+      }
+    },
+    {
+      "date": "2026-08-25",
+      "name": "Maulid Nabi Muhammad",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-12-24",
+      "name": "Cuti Bersama Natal (Malam Natal)",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-12-25",
+      "name": "Hari Raya Natal",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2026-12-31",
+      "name": "Malam Tahun Baru",
+      "type": "observance",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Perayaan"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-01-01",
+      "name": "Hari Tahun Baru",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-01-01",
+      "name": "Tahun Baru Masehi",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "New Year's Day"
+      }
+    },
+    {
+      "date": "2027-01-05",
+      "name": "Isra Mikraj Nabi Muhammad (belum pasti)",
+      "type": "national_holiday",
+      "tentative": true,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-02-05",
+      "name": "Cuti Bersama Tahun Baru Imlek",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-02-06",
+      "name": "Tahun Baru Imlek",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-02-09",
+      "name": "1 Ramadan (belum pasti)",
+      "type": "observance",
+      "tentative": true,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Perayaan"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-08",
+      "name": "Hari Suci Nyepi (Tahun Baru Saka)",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-09",
+      "name": "Cuti Bersama Idul Fitri",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-10",
+      "name": "Hari Idul Fitri (belum pasti)",
+      "type": "national_holiday",
+      "tentative": true,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-11",
+      "name": "Hari Idul Fitri (belum pasti)",
+      "type": "national_holiday",
+      "tentative": true,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-12",
+      "name": "Cuti Bersama Idul Fitri",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-15",
+      "name": "Cuti Bersama Idul Fitri",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-25",
+      "name": "Joint Holiday for Good Friday",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-26",
+      "name": "Wafat Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-28",
+      "name": "Hari Paskah",
+      "type": "observance",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Perayaan"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-03-28",
+      "name": "Paskah",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Easter Sunday"
+      }
+    },
+    {
+      "date": "2027-05-01",
+      "name": "Hari Buruh Internasional / Pekerja",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Labour Day"
+      }
+    },
+    {
+      "date": "2027-05-06",
+      "name": "Kenaikan Isa Al Masih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-05-06",
+      "name": "Kenaikan Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Ascension Day"
+      }
+    },
+    {
+      "date": "2027-05-17",
+      "name": "Idul Adha (Lebaran Haji) (belum pasti)",
+      "type": "national_holiday",
+      "tentative": true,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-05-18",
+      "name": "Idul Adha (Lebaran Haji)",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-05-19",
+      "name": "Cuti Bersama Waisak",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-05-20",
+      "name": "Hari Raya Waisak",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-06-06",
+      "name": "Satu Muharam / Tahun Baru Hijriah (belum pasti)",
+      "type": "national_holiday",
+      "tentative": true,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-08-15",
+      "name": "Maulid Nabi Muhammad (belum pasti)",
+      "type": "national_holiday",
+      "tentative": true,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-08-17",
+      "name": "Hari Proklamasi Kemerdekaan R.I.",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-08-17",
+      "name": "Hari Ulang Tahun Kemerdekaan Republik Indonesia",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Independence Day"
+      }
+    },
+    {
+      "date": "2027-12-24",
+      "name": "Cuti Bersama Natal (Malam Natal)",
+      "type": "joint_leave",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-12-25",
+      "name": "Hari Raya Natal",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Hari libur nasional"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2027-12-31",
+      "name": "Malam Tahun Baru",
+      "type": "observance",
+      "tentative": false,
+      "sourceId": "guangrei-calendar",
+      "metadata": {
+        "descriptions": [
+          "Perayaan"
+        ],
+        "upstreamUpdated": "20260924 17:05:45"
+      }
+    },
+    {
+      "date": "2028-01-01",
+      "name": "Tahun Baru Masehi",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "New Year's Day"
+      }
+    },
+    {
+      "date": "2028-04-14",
+      "name": "Wafat Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Good Friday"
+      }
+    },
+    {
+      "date": "2028-04-16",
+      "name": "Paskah",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Easter Sunday"
+      }
+    },
+    {
+      "date": "2028-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Labour Day"
+      }
+    },
+    {
+      "date": "2028-05-25",
+      "name": "Kenaikan Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Ascension Day"
+      }
+    },
+    {
+      "date": "2028-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Pancasila Day"
+      }
+    },
+    {
+      "date": "2028-08-17",
+      "name": "Hari Ulang Tahun Kemerdekaan Republik Indonesia",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Independence Day"
+      }
+    },
+    {
+      "date": "2028-12-25",
+      "name": "Hari Raya Natal",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Christmas Day"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "guangrei-calendar",
+      "label": "APIHariLibur_V2 (guangrei) — calendar.json",
+      "url": "https://raw.githubusercontent.com/guangrei/APIHariLibur_V2/main/calendar.json",
+      "ok": true,
+      "count": 55,
+      "upstreamUpdated": "20260924 17:05:45"
+    },
+    {
+      "id": "nager-date-id",
+      "label": "Nager.Date — PublicHolidays (ID)",
+      "url": "https://date.nager.at/api/v3/PublicHolidays/2024/ID",
+      "ok": true,
+      "count": 8,
+      "upstreamUpdated": null
+    },
+    {
+      "id": "nager-date-id",
+      "label": "Nager.Date — PublicHolidays (ID)",
+      "url": "https://date.nager.at/api/v3/PublicHolidays/2025/ID",
+      "ok": true,
+      "count": 8,
+      "upstreamUpdated": null
+    },
+    {
+      "id": "nager-date-id",
+      "label": "Nager.Date — PublicHolidays (ID)",
+      "url": "https://date.nager.at/api/v3/PublicHolidays/2026/ID",
+      "ok": true,
+      "count": 8,
+      "upstreamUpdated": null
+    },
+    {
+      "id": "nager-date-id",
+      "label": "Nager.Date — PublicHolidays (ID)",
+      "url": "https://date.nager.at/api/v3/PublicHolidays/2027/ID",
+      "ok": true,
+      "count": 8,
+      "upstreamUpdated": null
+    },
+    {
+      "id": "nager-date-id",
+      "label": "Nager.Date — PublicHolidays (ID)",
+      "url": "https://date.nager.at/api/v3/PublicHolidays/2028/ID",
+      "ok": true,
+      "count": 8,
+      "upstreamUpdated": null
+    }
+  ],
+  "errors": []
+}

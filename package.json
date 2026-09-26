@@ -1,0 +1,28 @@
+{
+  "name": "api-harilibur-id",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API hari libur nasional & cuti bersama Indonesia berbasis SKB 3 Menteri (Menag, Menaker, PANRB) dengan pemutakhiran otomatis dari sumber resmi.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "refresh": "node src/scripts/refresh.js",
+    "refresh:official": "node src/scripts/refresh.js --official",
+    "fixtures": "node src/scripts/make-fixtures.js",
+    "test": "node --test test/api.test.js"
+  },
+  "keywords": [
+    "hari-libur",
+    "cuti-bersama",
+    "skb-3-menteri",
+    "tanggal-merah",
+    "indonesia",
+    "api"
+  ],
+  "license": "MIT"
+}

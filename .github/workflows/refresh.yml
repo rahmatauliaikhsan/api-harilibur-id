@@ -1,0 +1,56 @@
+name: refresh-data
+
+on:
+  schedule:
+    # Setiap hari 01:15 UTC (08:15 WIB) — SKB bisa terbit/diubah kapan saja.
+    - cron: "15 1 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Paksa ambil ulang semua sumber"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      AUTO_REFRESH: "false"
+      FETCH_DELAY_MS: "400"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Pengujian
+        run: npm test
+
+      - name: Perbarui data dari sumber resmi
+        run: node src/scripts/refresh.js --force
+
+      - name: Ringkasan hasil
+        run: |
+          {
+            echo "### Pemutakhiran data"
+            echo '```'
+            node -e "const fs=require('fs');const p='data/cache/state.json';if(fs.existsSync(p)){const s=JSON.parse(fs.readFileSync(p,'utf8'));const o=s.lastRun?.results?.official;console.log('artikel resmi:',o?.articleCount??0);for(const r of o?.results??[])console.log(r.year,r.via,r.status,JSON.stringify(r.counts));}" 
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit perubahan data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cache data/skb
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan data."
+          else
+            git commit -m "chore(data): perbarui data SKB hari libur $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -1,0 +1,43 @@
+{
+  "year": 2027,
+  "status": "official",
+  "skb": {
+    "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
+    "numbers": [
+      { "ministry": "Kementerian Agama", "number": "1205", "year": 2026 },
+      { "ministry": "Kementerian Ketenagakerjaan", "number": "3", "year": 2026 },
+      { "ministry": "Kementerian PANRB", "number": "2", "year": 2026 }
+    ],
+    "signedAt": "2026-09-15",
+    "sourceUrl": "https://www.kemenkopmk.go.id/index.php/pemerintah-tetapkan-18-hari-libur-nasional-dan-8-cuti-bersama-tahun-2027",
+    "amendments": []
+  },
+  "entries": [
+    { "date": "2027-01-01", "name": "Tahun Baru 2027 Masehi", "type": "national_holiday" },
+    { "date": "2027-01-05", "name": "Isra Mikraj Nabi Muhammad SAW 1448 Hijriah", "type": "national_holiday" },
+    { "date": "2027-02-05", "name": "Tahun Baru Imlek 2578 Kongzili", "type": "joint_leave" },
+    { "date": "2027-02-06", "name": "Tahun Baru Imlek 2578 Kongzili", "type": "national_holiday" },
+    { "date": "2027-03-08", "name": "Hari Suci Nyepi (Tahun Baru Saka 1949)", "type": "national_holiday" },
+    { "date": "2027-03-09", "name": "Idul Fitri 1448 Hijriah", "type": "joint_leave" },
+    { "date": "2027-03-10", "name": "Idul Fitri 1448 Hijriah", "type": "national_holiday" },
+    { "date": "2027-03-11", "name": "Idul Fitri 1448 Hijriah", "type": "national_holiday" },
+    { "date": "2027-03-12", "name": "Idul Fitri 1448 Hijriah", "type": "joint_leave" },
+    { "date": "2027-03-15", "name": "Idul Fitri 1448 Hijriah", "type": "joint_leave" },
+    { "date": "2027-03-25", "name": "Wafat Yesus Kristus", "type": "joint_leave" },
+    { "date": "2027-03-26", "name": "Wafat Yesus Kristus", "type": "national_holiday" },
+    { "date": "2027-03-28", "name": "Kebangkitan Yesus Kristus (Paskah)", "type": "national_holiday" },
+    { "date": "2027-05-01", "name": "Hari Buruh Internasional", "type": "national_holiday" },
+    { "date": "2027-05-06", "name": "Kenaikan Yesus Kristus", "type": "national_holiday" },
+    { "date": "2027-05-17", "name": "Idul Adha 1448 Hijriah", "type": "national_holiday" },
+    { "date": "2027-05-18", "name": "Idul Adha 1448 Hijriah", "type": "joint_leave" },
+    { "date": "2027-05-19", "name": "Hari Raya Waisak 2571 BE", "type": "joint_leave" },
+    { "date": "2027-05-20", "name": "Hari Raya Waisak 2571 BE", "type": "national_holiday" },
+    { "date": "2027-06-01", "name": "Hari Lahir Pancasila", "type": "national_holiday" },
+    { "date": "2027-06-06", "name": "1 Muharam Tahun Baru Islam 1449 Hijriah", "type": "national_holiday" },
+    { "date": "2027-08-15", "name": "Maulid Nabi Muhammad SAW", "type": "national_holiday" },
+    { "date": "2027-08-17", "name": "Proklamasi Kemerdekaan", "type": "national_holiday" },
+    { "date": "2027-12-24", "name": "Kelahiran Yesus Kristus", "type": "joint_leave" },
+    { "date": "2027-12-25", "name": "Kelahiran Yesus Kristus", "type": "national_holiday" },
+    { "date": "2027-12-26", "name": "Isra Mikraj Nabi Muhammad SAW 1449 Hijriah", "type": "national_holiday" }
+  ]
+}

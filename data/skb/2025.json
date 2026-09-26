@@ -1,0 +1,62 @@
+{
+  "year": 2025,
+  "status": "official",
+  "skb": {
+    "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2025",
+    "numbers": [
+      { "ministry": "Kementerian Agama", "number": "1017", "year": 2024 },
+      { "ministry": "Kementerian Ketenagakerjaan", "number": "2", "year": 2024 },
+      { "ministry": "Kementerian PANRB", "number": "2", "year": 2024 }
+    ],
+    "signedAt": "2024-10-14",
+    "sourceUrl": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2025/",
+    "amendments": [
+      {
+        "title": "Perubahan Atas SKB Hari Libur Nasional dan Cuti Bersama Tahun 2025",
+        "numbers": [
+          { "ministry": "Kementerian Agama", "number": "933", "year": 2025 },
+          { "ministry": "Kementerian Ketenagakerjaan", "number": "1", "year": 2025 },
+          { "ministry": "Kementerian PANRB", "number": "3", "year": 2025 }
+        ],
+        "signedAt": "2025-08-07",
+        "sourceUrl": "https://jdih.kemenkoinfra.go.id/keputusanbersama-menteriagama-menteriketenagakerjaan-menteripanrb-no-933-1-3-tahun-2025",
+        "note": "Menambah 1 hari cuti bersama: 18 Agustus 2025 (peringatan Proklamasi Kemerdekaan RI)."
+      }
+    ]
+  },
+  "entries": [
+    { "date": "2025-01-01", "name": "Tahun Baru 2025 Masehi", "type": "national_holiday" },
+    { "date": "2025-01-27", "name": "Isra Mikraj Nabi Muhammad SAW", "type": "national_holiday" },
+    { "date": "2025-01-28", "name": "Tahun Baru Imlek 2576 Kongzili", "type": "joint_leave" },
+    { "date": "2025-01-29", "name": "Tahun Baru Imlek 2576 Kongzili", "type": "national_holiday" },
+    { "date": "2025-03-28", "name": "Hari Suci Nyepi (Tahun Baru Saka 1947)", "type": "joint_leave" },
+    { "date": "2025-03-29", "name": "Hari Suci Nyepi (Tahun Baru Saka 1947)", "type": "national_holiday" },
+    { "date": "2025-03-31", "name": "Idulfitri 1446 Hijriah", "type": "national_holiday" },
+    { "date": "2025-04-01", "name": "Idulfitri 1446 Hijriah", "type": "national_holiday" },
+    { "date": "2025-04-02", "name": "Idulfitri 1446 Hijriah", "type": "joint_leave" },
+    { "date": "2025-04-03", "name": "Idulfitri 1446 Hijriah", "type": "joint_leave" },
+    { "date": "2025-04-04", "name": "Idulfitri 1446 Hijriah", "type": "joint_leave" },
+    { "date": "2025-04-07", "name": "Idulfitri 1446 Hijriah", "type": "joint_leave" },
+    { "date": "2025-04-18", "name": "Wafat Yesus Kristus", "type": "national_holiday" },
+    { "date": "2025-04-20", "name": "Kebangkitan Yesus Kristus (Paskah)", "type": "national_holiday" },
+    { "date": "2025-05-01", "name": "Hari Buruh Internasional", "type": "national_holiday" },
+    { "date": "2025-05-12", "name": "Hari Raya Waisak 2569 BE", "type": "national_holiday" },
+    { "date": "2025-05-13", "name": "Hari Raya Waisak 2569 BE", "type": "joint_leave" },
+    { "date": "2025-05-29", "name": "Kenaikan Yesus Kristus", "type": "national_holiday" },
+    { "date": "2025-05-30", "name": "Kenaikan Yesus Kristus", "type": "joint_leave" },
+    { "date": "2025-06-01", "name": "Hari Lahir Pancasila", "type": "national_holiday" },
+    { "date": "2025-06-06", "name": "Iduladha 1446 Hijriah", "type": "national_holiday" },
+    { "date": "2025-06-09", "name": "Iduladha 1446 Hijriah", "type": "joint_leave" },
+    { "date": "2025-06-27", "name": "1 Muharam Tahun Baru Islam 1447 Hijriah", "type": "national_holiday" },
+    { "date": "2025-08-17", "name": "Proklamasi Kemerdekaan", "type": "national_holiday" },
+    {
+      "date": "2025-08-18",
+      "name": "Cuti Bersama Peringatan Proklamasi Kemerdekaan RI",
+      "type": "joint_leave",
+      "amendedBy": "SKB Nomor 933, 1, dan 3 Tahun 2025"
+    },
+    { "date": "2025-09-05", "name": "Maulid Nabi Muhammad SAW", "type": "national_holiday" },
+    { "date": "2025-12-25", "name": "Kelahiran Yesus Kristus", "type": "national_holiday" },
+    { "date": "2025-12-26", "name": "Kelahiran Yesus Kristus", "type": "joint_leave" }
+  ]
+}

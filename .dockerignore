@@ -1,0 +1,12 @@
+node_modules
+data/cache
+test-output.txt
+refresh-output.txt
+smoke.txt
+probe3.txt
+probe-urls*.mjs
+smoke.mjs
+*.log
+.git
+.gitignore
+.env
