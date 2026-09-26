@@ -301,6 +301,32 @@ Pola yang disarankan: jalankan `node src/scripts/refresh.js --force` lewat
 **cron/GitHub Actions**, commit folder `data/cache/`, lalu deploy; server membaca
 cache tersebut. Scheduler internal tinggal dimatikan (`AUTO_REFRESH=false`).
 
+#### Vercel (sudah dikonfigurasi di repo)
+
+Deploy otomatis lewat integrasi GitHub — cukup hubungkan repositori di
+[Vercel](https://vercel.com), tanpa build command dan tanpa dependensi.
+
+| Berkas | Fungsi |
+| --- | --- |
+| `api/index.js` | Serverless function yang menginstans `HolidayStore` sekali (warm start) lalu meneruskan request ke router HTTP yang sama dengan mode lokal |
+| `vercel.json` | `rewrites` semua path ke fungsi tersebut, sekaligus memakai wildcard `$1` yang diteruskan sebagai query `__path` supaya routing internal tetap berjalan; `includeFiles: data/**` memastikan dataset ikut ter-bundle |
+| `src/server.js` | Default export handler agar Vercel mendeteksi entrypoint Node.js |
+
+Contoh request yang sudah terverifikasi pada URL produksi:
+
+```bash
+curl https://api-harilibur-id-chi.vercel.app/api/today
+curl https://api-harilibur-id-chi.vercel.app/api/holidays/2026
+curl https://api-harilibur-id-chi.vercel.app/api/check/2026-08-17
+curl https://api-harilibur-id-chi.vercel.app/api/ical?year=2026
+curl https://api-harilibur-id-chi.vercel.app/api/meta
+```
+
+Endpoint `POST /api/refresh` sengaja dibalas `501 read_only_environment` di
+lingkungan serverless. Pemutakhiran tetap dilakukan GitHub Actions setiap hari
+(08:15 WIB) yang meng-commit `data/cache/`, lalu Vercel auto-deploy ulang —
+jadi data di URL produksi tetap fresk tanpa perlu server hidup permanen.
+
 ### GitHub Actions
 
 Berkas `.github/workflows/refresh.yml` sudah tersedia: menjalankan pengujian,

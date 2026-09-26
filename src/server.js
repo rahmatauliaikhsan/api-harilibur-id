@@ -456,6 +456,17 @@ async function handleIcal(ctx) {
 }
 
 async function handleRefresh(ctx) {
+  // Filesystem serverless (Vercel/Netlify) bersifat read-only: refresh hanya bisa
+  // dilakukan lewat cron/GitHub Actions yang meng-commit data/cache.
+  if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
+    return sendError(
+      ctx.req,
+      ctx.res,
+      501,
+      "read_only_environment",
+      "Lingkungan ini read-only. Jalankan `node src/scripts/refresh.js --force` lewat GitHub Actions/cron lalu deploy ulang.",
+    );
+  }
   if (config.adminToken) {
     const token = ctx.req.headers["x-api-key"] ?? ctx.query.get("token");
     if (token !== config.adminToken) {
