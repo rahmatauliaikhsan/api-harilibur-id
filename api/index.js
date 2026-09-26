@@ -60,15 +60,24 @@ async function getServer() {
 
 export default async function handler(req, res) {
   try {
-    // Di lingkungan Vercel rewrites, path asli dikirimkan di header x-matched-path atau x-now-route-matches
-    const originalUrl =
-      req.headers["x-matched-path"] ||
-      req.headers["x-vercel-matched-path"] ||
-      req.headers["x-forwarded-uri"] ||
-      req.url;
+    const parsed = new URL(req.url, "http://localhost");
+    const pathParam = parsed.searchParams.get("__path");
 
-    if (originalUrl && originalUrl !== req.url && !originalUrl.startsWith("/api/index")) {
-      req.url = originalUrl;
+    if (pathParam !== null) {
+      // Rekonstruksi URL dari __path yang dioper oleh rewrite
+      parsed.searchParams.delete("__path");
+      const search = parsed.searchParams.toString();
+      const normalizedPath = pathParam.startsWith("/") ? pathParam : `/${pathParam}`;
+      req.url = `${normalizedPath}${search ? `?${search}` : ""}`;
+    } else {
+      const originalUrl =
+        req.headers["x-matched-path"] ||
+        req.headers["x-vercel-matched-path"] ||
+        req.headers["x-forwarded-uri"];
+
+      if (originalUrl && !originalUrl.startsWith("/api/index")) {
+        req.url = originalUrl;
+      }
     }
 
     const server = await getServer();
@@ -80,5 +89,6 @@ export default async function handler(req, res) {
     res.end(JSON.stringify({ ok: false, error: "Internal Server Error", message: err.message, stack: err.stack }));
   }
 }
+
 
 
