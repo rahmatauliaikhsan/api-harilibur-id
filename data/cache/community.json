@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-26T12:34:56.063Z",
+  "fetchedAt": "2026-09-26T14:17:09.353Z",
   "entries": [
     {
       "date": "2024-01-01",
@@ -1055,6 +1055,86 @@
       "metadata": {
         "englishName": "Christmas Day"
       }
+    },
+    {
+      "date": "2029-01-01",
+      "name": "Tahun Baru Masehi",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "New Year's Day"
+      }
+    },
+    {
+      "date": "2029-03-30",
+      "name": "Wafat Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Good Friday"
+      }
+    },
+    {
+      "date": "2029-04-01",
+      "name": "Paskah",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Easter Sunday"
+      }
+    },
+    {
+      "date": "2029-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Labour Day"
+      }
+    },
+    {
+      "date": "2029-05-10",
+      "name": "Kenaikan Isa Almasih",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Ascension Day"
+      }
+    },
+    {
+      "date": "2029-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Pancasila Day"
+      }
+    },
+    {
+      "date": "2029-08-17",
+      "name": "Hari Ulang Tahun Kemerdekaan Republik Indonesia",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Independence Day"
+      }
+    },
+    {
+      "date": "2029-12-25",
+      "name": "Hari Raya Natal",
+      "type": "national_holiday",
+      "tentative": false,
+      "sourceId": "nager-date-id",
+      "metadata": {
+        "englishName": "Christmas Day"
+      }
     }
   ],
   "sources": [
@@ -1102,6 +1182,14 @@
       "id": "nager-date-id",
       "label": "Nager.Date — PublicHolidays (ID)",
       "url": "https://date.nager.at/api/v3/PublicHolidays/2028/ID",
+      "ok": true,
+      "count": 8,
+      "upstreamUpdated": null
+    },
+    {
+      "id": "nager-date-id",
+      "label": "Nager.Date — PublicHolidays (ID)",
+      "url": "https://date.nager.at/api/v3/PublicHolidays/2029/ID",
       "ok": true,
       "count": 8,
       "upstreamUpdated": null
