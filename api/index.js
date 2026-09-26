@@ -60,6 +60,17 @@ async function getServer() {
 
 export default async function handler(req, res) {
   try {
+    // Di lingkungan Vercel rewrites, path asli dikirimkan di header x-matched-path atau x-now-route-matches
+    const originalUrl =
+      req.headers["x-matched-path"] ||
+      req.headers["x-vercel-matched-path"] ||
+      req.headers["x-forwarded-uri"] ||
+      req.url;
+
+    if (originalUrl && originalUrl !== req.url && !originalUrl.startsWith("/api/index")) {
+      req.url = originalUrl;
+    }
+
     const server = await getServer();
     server.emit("request", req, res);
   } catch (err) {
@@ -69,4 +80,5 @@ export default async function handler(req, res) {
     res.end(JSON.stringify({ ok: false, error: "Internal Server Error", message: err.message, stack: err.stack }));
   }
 }
+
 
