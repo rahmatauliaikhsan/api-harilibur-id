@@ -10,7 +10,13 @@ import path from "node:path";
 import { after, before, describe, it } from "node:test";
 import { fileURLToPath } from "node:url";
 
-import { findSections, htmlToText, parseItemList, parseOfficialHolidayPage } from "../src/lib/parse-official.js";
+import {
+  extractSkbMetadata,
+  findSections,
+  htmlToText,
+  parseItemList,
+  parseOfficialHolidayPage,
+} from "../src/lib/parse-official.js";
 import { HolidayStore, similarHolidayNames } from "../src/lib/store.js";
 import { buildISO, dayNameID, isWeekendISO, todayISO } from "../src/lib/utils.js";
 import { buildIcal, createServer } from "../src/server.js";
@@ -159,6 +165,45 @@ describe("parser halaman resmi SKB", () => {
     assert.equal(sections.length, 2);
     assert.equal(sections[0].type, "national_holiday");
     assert.equal(sections[1].type, "joint_leave");
+  });
+
+  it("mengambil tanggal SKB dari area artikel, bukan dari berita di sidebar", () => {
+    // Tanggal sidebar muncul lebih dulu secara tekstual pada beberapa situs;
+    // bila dipakai, artikel dianggap "lebih baru" dan menimpa data terkurasi.
+    const withSidebar = extractSkbMetadata(
+      "SKB Nomor: 1497 Tahun 2025 tentang Hari Libur Nasional dan Cuti Bersama Tahun 2026. " +
+        "1 Januari (Kamis): Tahun Baru 2026 Masehi. Berita Terbaru: 26 September 2026",
+      2026,
+    );
+    assert.equal(withSidebar.signedAt, null);
+    assert.equal(withSidebar.declaredYear, 2026);
+  });
+
+  it("menerima tanggal SKB yang masuk akal di semua posisi penulisan", () => {
+    assert.equal(
+      extractSkbMetadata(
+        "Jakarta, 19 September 2025 SKB Nomor: 1497 Tahun 2025 tentang Hari Libur Nasional " +
+          "dan Cuti Bersama Tahun 2026. 1 Januari (Kamis): Tahun Baru 2026 Masehi",
+        2026,
+      ).signedAt,
+      "2025-09-19",
+    );
+    assert.equal(
+      extractSkbMetadata(
+        "Surat Nomor: 2 Tahun 2026 tentang Hari Libur Nasional dan Cuti Bersama Tahun 2027 " +
+          "pada 15 September 2026",
+        2027,
+      ).signedAt,
+      "2026-09-15",
+    );
+    assert.equal(
+      extractSkbMetadata(
+        "SKB (19/09/2025) Nomor: 1497 Tahun 2025 tentang Hari Libur Nasional " +
+          "dan Cuti Bersama Tahun 2026",
+        2026,
+      ).signedAt,
+      "2025-09-19",
+    );
   });
 
   for (const fixture of [

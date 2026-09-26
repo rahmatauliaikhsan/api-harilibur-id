@@ -219,6 +219,16 @@ export function parseItemList(sectionText, { year, type, sourceUrl, sourceKind =
   return entries;
 }
 
+/** Batas area artikel: setelah penanda ini, isinya berita lain/sidebar. */
+const SIDEBAR_BREAK_RE =
+  /(Berita\/Artikel Terkait|Berita Terkait|Berita Terbaru|Artikel Terkait|Baca [Jj]uga|Kategori:|SCROLL|ADVERTISEMENT|Populer|Newsletter)/;
+
+/** Tahun yang disebut pada judul resmi ("...Cuti Bersama Tahun 2026"). */
+function titleYearMatch(flat) {
+  const match = flat.match(/tentang\s+Hari\s+Libur\s+Nasional\s+dan\s+Cuti\s+Bersama\s+Tahun\s+(20\d{2})/i);
+  return match ? Number(match[1]) : null;
+}
+
 /** Metadata SKB (nomor surat, tanggal tanda tangan) — best effort. */
 export function extractSkbMetadata(text, year) {
   const flat = text.replace(/\s+/g, " ");
@@ -229,23 +239,45 @@ export function extractSkbMetadata(text, year) {
     numbers.push({ number: m[1], year: m[2] ? Number(m[2]) : null });
   }
 
+  // Tanggal SKB hanya boleh diambil dari area artikel (bagian sebelum penanda
+  // konten tambahan seperti "Berita Terbaru"/"Artikel Terkait") dan harus
+  // masuk akal. Tanpa batasan ini, tanggal berita lain di halaman bisa
+  // tertangkap dan membuat artikel dianggap lebih baru daripada data terkurasi.
   let signedAt = null;
-  const numericDate = flat.match(/\((\d{1,2})\/(\d{1,2})\/(\d{4})\)/);
-  const wordDate = flat.match(/(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})/);
-  if (numericDate) {
-    signedAt = buildISO(Number(numericDate[3]), Number(numericDate[2]), Number(numericDate[1]));
-  } else if (wordDate) {
-    const monthNumber = monthNumberFromName(wordDate[2]);
-    if (monthNumber) signedAt = buildISO(Number(wordDate[3]), monthNumber, Number(wordDate[1]));
+  const leadEnd = flat.search(SIDEBAR_BREAK_RE);
+  const lead = (leadEnd > 0 ? flat.slice(0, leadEnd) : flat).slice(0, 1600);
+
+  // Semua kandidat tanggal di area ini diperiksa satu per satu; yang pertama
+  // belum tentu tanggal SKB (mis. "2 Tahun 2026" dari nomor surat).
+  const candidates = [];
+  for (const match of lead.matchAll(/\((\d{1,2})\/(\d{1,2})\/(\d{4})\)/g)) {
+    candidates.push(buildISO(Number(match[3]), Number(match[2]), Number(match[1])));
+  }
+  for (const match of lead.matchAll(/(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})/g)) {
+    const monthNumber = monthNumberFromName(match[2]);
+    if (monthNumber) candidates.push(buildISO(Number(match[3]), monthNumber, Number(match[1])));
+  }
+  const targetYear = year ?? titleYearMatch(flat);
+  for (const candidate of candidates) {
+    if (!candidate) continue;
+    const candidateYear = Number(candidate.slice(0, 4));
+    // SKB untuk tahun N hampir selalu ditandatangani pada tahun N-1 atau N.
+    const plausible =
+      Number.isFinite(candidateYear) &&
+      (!Number.isFinite(targetYear) || (candidateYear >= targetYear - 1 && candidateYear < targetYear));
+    if (plausible) {
+      signedAt = candidate;
+      break;
+    }
   }
 
-  const titleMatch = flat.match(/tentang\s+Hari\s+Libur\s+Nasional\s+dan\s+Cuti\s+Bersama\s+Tahun\s+(20\d{2})/i);
+  const declaredYear = titleYearMatch(flat) ?? year ?? null;
   const counts = flat.match(
     /hari\s+libur\s+nasional\s+(?:adalah\s+)?sebanyak\s+(\d{1,3})\s+hari\s+dan\s+(?:hari\s+)?cuti\s+bersama\s+(?:sebanyak\s+)?(\d{1,3})\s+hari/i,
   );
   return {
-    title: titleMatch ? `Hari Libur Nasional dan Cuti Bersama Tahun ${titleMatch[1]}` : null,
-    declaredYear: titleMatch ? Number(titleMatch[1]) : year ?? null,
+    title: declaredYear ? `Hari Libur Nasional dan Cuti Bersama Tahun ${declaredYear}` : null,
+    declaredYear,
     numbers: numbers.slice(0, 4),
     signedAt,
     declaredCounts: counts
