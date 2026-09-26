@@ -700,6 +700,13 @@ if (isMain) {
 }
 
 
+export default async function vercelHandler(req, res) {
+  const { default: handler } = await import("../api/index.js");
+  return handler(req, res);
+}
+
+
+
 
 
 
