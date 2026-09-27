@@ -1,10 +1,10 @@
 {
   "community": {
-    "refreshedAt": "2026-09-26T14:25:20.782Z",
+    "refreshedAt": "2026-09-27T06:37:59.060Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-09-26T14:26:17.484Z",
+    "refreshedAt": "2026-09-27T06:39:08.430Z",
     "ok": true
   },
   "errors": [
@@ -166,12 +166,12 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-09-26T14:25:16.507Z",
-    "finishedAt": "2026-09-26T14:26:17.488Z",
+    "startedAt": "2026-09-27T06:37:58.873Z",
+    "finishedAt": "2026-09-27T06:39:08.432Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-09-26T14:25:20.782Z",
+        "fetchedAt": "2026-09-27T06:37:59.060Z",
         "entryCount": 97,
         "sources": [
           {
@@ -234,7 +234,7 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-09-26T14:26:17.484Z",
+        "fetchedAt": "2026-09-27T06:39:08.430Z",
         "articleCount": 3,
         "results": [
           {
@@ -274,21 +274,9 @@
             "warnings": []
           }
         ],
-        "errors": [
-          {
-            "source": "kemenkopmk",
-            "url": "https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202029",
-            "error": "fetch failed"
-          }
-        ]
+        "errors": []
       }
     },
-    "errors": [
-      {
-        "source": "kemenkopmk",
-        "url": "https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202029",
-        "error": "fetch failed"
-      }
-    ]
+    "errors": []
   }
 }
