@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-29T06:58:30.153Z",
+  "fetchedAt": "2026-09-30T06:47:37.789Z",
   "articles": [
     {
       "id": "32da4bd49dca",
@@ -9,7 +9,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2025",
       "year": 2025,
       "pubDate": null,
-      "fetchedAt": "2026-09-29T06:58:07.851Z",
+      "fetchedAt": "2026-09-30T06:46:44.117Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -187,7 +187,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
       "year": 2026,
       "pubDate": null,
-      "fetchedAt": "2026-09-29T06:58:14.424Z",
+      "fetchedAt": "2026-09-30T06:47:17.276Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -355,7 +355,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
       "year": 2027,
       "pubDate": null,
-      "fetchedAt": "2026-09-29T06:58:24.066Z",
+      "fetchedAt": "2026-09-30T06:47:30.432Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -1118,5 +1118,11 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "source": "setneg",
+      "url": "https://www.setneg.go.id/baca/index/pemerintah_tetapkan_hari_libur_nasional_dan_cuti_bersama_tahun_2025",
+      "error": "fetch failed"
+    }
+  ]
 }

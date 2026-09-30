@@ -1,13 +1,19 @@
 {
   "community": {
-    "refreshedAt": "2026-09-29T06:57:13.397Z",
+    "refreshedAt": "2026-09-30T06:45:45.602Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-09-29T06:58:30.153Z",
+    "refreshedAt": "2026-09-30T06:47:37.789Z",
     "ok": true
   },
   "errors": [
+    {
+      "at": "2026-09-30T06:47:37.789Z",
+      "source": "setneg",
+      "url": "https://www.setneg.go.id/baca/index/pemerintah_tetapkan_hari_libur_nasional_dan_cuti_bersama_tahun_2025",
+      "error": "fetch failed"
+    },
     {
       "at": "2026-09-26T14:26:17.484Z",
       "source": "kemenkopmk",
@@ -166,12 +172,12 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-09-29T06:57:13.084Z",
-    "finishedAt": "2026-09-29T06:58:30.155Z",
+    "startedAt": "2026-09-30T06:45:45.178Z",
+    "finishedAt": "2026-09-30T06:47:37.792Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-09-29T06:57:13.397Z",
+        "fetchedAt": "2026-09-30T06:45:45.602Z",
         "entryCount": 97,
         "sources": [
           {
@@ -234,7 +240,7 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-09-29T06:58:30.153Z",
+        "fetchedAt": "2026-09-30T06:47:37.789Z",
         "articleCount": 3,
         "results": [
           {
@@ -274,9 +280,21 @@
             "warnings": []
           }
         ],
-        "errors": []
+        "errors": [
+          {
+            "source": "setneg",
+            "url": "https://www.setneg.go.id/baca/index/pemerintah_tetapkan_hari_libur_nasional_dan_cuti_bersama_tahun_2025",
+            "error": "fetch failed"
+          }
+        ]
       }
     },
-    "errors": []
+    "errors": [
+      {
+        "source": "setneg",
+        "url": "https://www.setneg.go.id/baca/index/pemerintah_tetapkan_hari_libur_nasional_dan_cuti_bersama_tahun_2025",
+        "error": "fetch failed"
+      }
+    ]
   }
 }
