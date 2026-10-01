@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-30T06:47:37.789Z",
+  "fetchedAt": "2026-10-01T07:14:16.400Z",
   "articles": [
     {
       "id": "32da4bd49dca",
@@ -9,7 +9,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2025",
       "year": 2025,
       "pubDate": null,
-      "fetchedAt": "2026-09-30T06:46:44.117Z",
+      "fetchedAt": "2026-10-01T07:13:48.363Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -187,7 +187,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
       "year": 2026,
       "pubDate": null,
-      "fetchedAt": "2026-09-30T06:47:17.276Z",
+      "fetchedAt": "2026-10-01T07:13:54.519Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -355,7 +355,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
       "year": 2027,
       "pubDate": null,
-      "fetchedAt": "2026-09-30T06:47:30.432Z",
+      "fetchedAt": "2026-10-01T07:14:07.066Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -1120,9 +1120,14 @@
   ],
   "errors": [
     {
-      "source": "setneg",
-      "url": "https://www.setneg.go.id/baca/index/pemerintah_tetapkan_hari_libur_nasional_dan_cuti_bersama_tahun_2025",
-      "error": "fetch failed"
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
+      "error": "The operation was aborted due to timeout"
     }
   ]
 }
