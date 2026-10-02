@@ -1,10 +1,10 @@
 {
   "community": {
-    "refreshedAt": "2026-10-01T07:12:06.679Z",
+    "refreshedAt": "2026-10-02T07:01:47.587Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-10-01T07:14:16.400Z",
+    "refreshedAt": "2026-10-02T07:02:52.286Z",
     "ok": true
   },
   "errors": [
@@ -184,12 +184,12 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-10-01T07:12:05.557Z",
-    "finishedAt": "2026-10-01T07:14:16.402Z",
+    "startedAt": "2026-10-02T07:01:46.982Z",
+    "finishedAt": "2026-10-02T07:02:52.289Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-10-01T07:12:06.679Z",
+        "fetchedAt": "2026-10-02T07:01:47.587Z",
         "entryCount": 97,
         "sources": [
           {
@@ -252,7 +252,7 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-10-01T07:14:16.400Z",
+        "fetchedAt": "2026-10-02T07:02:52.286Z",
         "articleCount": 3,
         "results": [
           {
@@ -292,31 +292,9 @@
             "warnings": []
           }
         ],
-        "errors": [
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
-            "error": "The operation was aborted due to timeout"
-          },
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
-            "error": "The operation was aborted due to timeout"
-          }
-        ]
+        "errors": []
       }
     },
-    "errors": [
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
-        "error": "The operation was aborted due to timeout"
-      },
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
-        "error": "The operation was aborted due to timeout"
-      }
-    ]
+    "errors": []
   }
 }
