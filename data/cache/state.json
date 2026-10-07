@@ -1,13 +1,31 @@
 {
   "community": {
-    "refreshedAt": "2026-10-06T07:36:14.340Z",
+    "refreshedAt": "2026-10-07T07:16:39.358Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-10-06T07:37:38.381Z",
+    "refreshedAt": "2026-10-07T07:18:45.495Z",
     "ok": true
   },
   "errors": [
+    {
+      "at": "2026-10-07T07:18:45.495Z",
+      "source": "setkab",
+      "url": "https://setkab.go.id/feed/",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "at": "2026-10-07T07:18:45.495Z",
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "at": "2026-10-07T07:18:45.495Z",
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
+      "error": "The operation was aborted due to timeout"
+    },
     {
       "at": "2026-10-01T07:14:16.400Z",
       "source": "setkab",
@@ -169,27 +187,15 @@
       "source": "setkab",
       "url": "https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2028/",
       "error": "HTTP 404 untuk https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2028/"
-    },
-    {
-      "at": "2026-09-26T12:29:25.100Z",
-      "source": "setneg",
-      "url": "https://www.setneg.go.id/baca/index/inilah_skb_3_menteri_libur_nasional_dan_cuti_bersama_2028",
-      "error": "HTTP 404 untuk https://www.setneg.go.id/baca/index/inilah_skb_3_menteri_libur_nasional_dan_cuti_bersama_2028"
-    },
-    {
-      "at": "2026-09-26T12:29:25.100Z",
-      "source": "setneg",
-      "url": "https://www.setneg.go.id/baca/index/pemerintah_tetapkan_hari_libur_nasional_dan_cuti_bersama_tahun_2028",
-      "error": "HTTP 404 untuk https://www.setneg.go.id/baca/index/pemerintah_tetapkan_hari_libur_nasional_dan_cuti_bersama_tahun_2028"
     }
   ],
   "lastRun": {
-    "startedAt": "2026-10-06T07:36:14.018Z",
-    "finishedAt": "2026-10-06T07:37:38.384Z",
+    "startedAt": "2026-10-07T07:16:38.514Z",
+    "finishedAt": "2026-10-07T07:18:45.497Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-10-06T07:36:14.340Z",
+        "fetchedAt": "2026-10-07T07:16:39.358Z",
         "entryCount": 97,
         "sources": [
           {
@@ -252,7 +258,7 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-10-06T07:37:38.381Z",
+        "fetchedAt": "2026-10-07T07:18:45.495Z",
         "articleCount": 3,
         "results": [
           {
@@ -292,9 +298,41 @@
             "warnings": []
           }
         ],
-        "errors": []
+        "errors": [
+          {
+            "source": "setkab",
+            "url": "https://setkab.go.id/feed/",
+            "error": "The operation was aborted due to timeout"
+          },
+          {
+            "source": "setkab",
+            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
+            "error": "The operation was aborted due to timeout"
+          },
+          {
+            "source": "setkab",
+            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
+            "error": "The operation was aborted due to timeout"
+          }
+        ]
       }
     },
-    "errors": []
+    "errors": [
+      {
+        "source": "setkab",
+        "url": "https://setkab.go.id/feed/",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "source": "setkab",
+        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "source": "setkab",
+        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
+        "error": "The operation was aborted due to timeout"
+      }
+    ]
   }
 }
