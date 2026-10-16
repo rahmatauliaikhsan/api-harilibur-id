@@ -1,10 +1,10 @@
 {
   "community": {
-    "refreshedAt": "2026-10-15T05:55:29.159Z",
+    "refreshedAt": "2026-10-16T05:53:19.650Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-10-15T05:56:51.275Z",
+    "refreshedAt": "2026-10-16T05:54:27.458Z",
     "ok": true
   },
   "errors": [
@@ -190,12 +190,12 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-10-15T05:55:28.527Z",
-    "finishedAt": "2026-10-15T05:56:51.277Z",
+    "startedAt": "2026-10-16T05:53:19.046Z",
+    "finishedAt": "2026-10-16T05:54:27.460Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-10-15T05:55:29.159Z",
+        "fetchedAt": "2026-10-16T05:53:19.650Z",
         "entryCount": 97,
         "sources": [
           {
@@ -258,9 +258,32 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-10-15T05:56:51.275Z",
+        "fetchedAt": "2026-10-16T05:54:27.458Z",
         "articleCount": 3,
         "results": [
+          {
+            "url": "https://www.kemenkopmk.go.id/kemenko-pmk-perkuat-sinergi-lintas-kementerianlembaga-dalam-penyusunan-skb-pencegahan-dan",
+            "sourceId": "kemenkopmk",
+            "via": "kemenkopmk-feed",
+            "year": 2026,
+            "status": "rejected",
+            "counts": {},
+            "warnings": [
+              "tidak_ada_entri_terparse"
+            ]
+          },
+          {
+            "url": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2025/",
+            "sourceId": "setkab",
+            "via": "slug",
+            "year": 2025,
+            "status": "accepted",
+            "counts": {
+              "national_holiday": 17,
+              "joint_leave": 10
+            },
+            "warnings": []
+          },
           {
             "url": "https://www.setneg.go.id/baca/index/inilah_skb_3_menteri_libur_nasional_dan_cuti_bersama_2026",
             "sourceId": "setneg",
@@ -286,81 +309,9 @@
             "warnings": []
           }
         ],
-        "errors": [
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/feed/",
-            "error": "The operation was aborted due to timeout"
-          },
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
-            "error": "HTTP 500 untuk https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028"
-          },
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
-            "error": "The operation was aborted due to timeout"
-          },
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2025/",
-            "error": "HTTP 500 untuk https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2025/"
-          },
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2025/",
-            "error": "HTTP 500 untuk https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2025/"
-          },
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2026/",
-            "error": "HTTP 500 untuk https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2026/"
-          },
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2026/",
-            "error": "HTTP 500 untuk https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2026/"
-          }
-        ]
+        "errors": []
       }
     },
-    "errors": [
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/feed/",
-        "error": "The operation was aborted due to timeout"
-      },
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
-        "error": "HTTP 500 untuk https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028"
-      },
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
-        "error": "The operation was aborted due to timeout"
-      },
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2025/",
-        "error": "HTTP 500 untuk https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2025/"
-      },
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2025/",
-        "error": "HTTP 500 untuk https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2025/"
-      },
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2026/",
-        "error": "HTTP 500 untuk https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2026/"
-      },
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2026/",
-        "error": "HTTP 500 untuk https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2026/"
-      }
-    ]
+    "errors": []
   }
 }
