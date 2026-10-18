@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-17T05:38:41.402Z",
+  "fetchedAt": "2026-10-18T05:58:06.505Z",
   "articles": [
     {
       "id": "32da4bd49dca",
@@ -9,7 +9,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2025",
       "year": 2025,
       "pubDate": null,
-      "fetchedAt": "2026-10-17T05:38:22.081Z",
+      "fetchedAt": "2026-10-18T05:57:49.382Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -187,7 +187,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
       "year": 2026,
       "pubDate": null,
-      "fetchedAt": "2026-10-17T05:38:28.668Z",
+      "fetchedAt": "2026-10-18T05:57:55.451Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -355,7 +355,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
       "year": 2027,
       "pubDate": null,
-      "fetchedAt": "2026-10-17T05:38:37.776Z",
+      "fetchedAt": "2026-10-18T05:58:02.667Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -522,6 +522,31 @@
     }
   ],
   "rejected": [
+    {
+      "id": "337310c42426",
+      "url": "https://www.kemenkopmk.go.id/kemenko-pmk-perkuat-sinergi-lintas-kementerianlembaga-dalam-penyusunan-skb-pencegahan-dan",
+      "sourceId": "kemenkopmk",
+      "via": "kemenkopmk-feed",
+      "title": "Kemenko PMK Perkuat Sinergi Lintas Kementerian/Lembaga dalam Penyusunan SKB Pencegahan dan Penanganan Kekerasan di Perguruan Tinggi",
+      "year": 2026,
+      "pubDate": "Thu, 15 Oct 2026 07:20:29 +0000",
+      "fetchedAt": "2026-10-18T05:57:42.526Z",
+      "status": "rejected",
+      "isAmendment": false,
+      "counts": {},
+      "warnings": [
+        "tidak_ada_entri_terparse"
+      ],
+      "metadata": {
+        "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
+        "declaredYear": 2026,
+        "numbers": [],
+        "signedAt": null,
+        "declaredCounts": null,
+        "isAmendment": false
+      },
+      "entries": []
+    },
     {
       "id": "337310c42426",
       "url": "https://www.kemenkopmk.go.id/kemenko-pmk-perkuat-sinergi-lintas-kementerianlembaga-dalam-penyusunan-skb-pencegahan-dan",
