@@ -1,13 +1,31 @@
 {
   "community": {
-    "refreshedAt": "2026-10-19T06:14:58.282Z",
+    "refreshedAt": "2026-10-20T06:03:52.873Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-10-19T06:16:11.895Z",
+    "refreshedAt": "2026-10-20T06:05:59.734Z",
     "ok": true
   },
   "errors": [
+    {
+      "at": "2026-10-20T06:05:59.734Z",
+      "source": "setkab",
+      "url": "https://setkab.go.id/feed/",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "at": "2026-10-20T06:05:59.734Z",
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "at": "2026-10-20T06:05:59.734Z",
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
+      "error": "The operation was aborted due to timeout"
+    },
     {
       "at": "2026-10-15T05:56:51.275Z",
       "source": "setkab",
@@ -169,33 +187,15 @@
       "source": "setkab",
       "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
       "error": "The operation was aborted due to timeout"
-    },
-    {
-      "at": "2026-10-07T07:18:45.495Z",
-      "source": "setkab",
-      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "at": "2026-10-01T07:14:16.400Z",
-      "source": "setkab",
-      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "at": "2026-10-01T07:14:16.400Z",
-      "source": "setkab",
-      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
-      "error": "The operation was aborted due to timeout"
     }
   ],
   "lastRun": {
-    "startedAt": "2026-10-19T06:14:57.749Z",
-    "finishedAt": "2026-10-19T06:16:11.897Z",
+    "startedAt": "2026-10-20T06:03:52.382Z",
+    "finishedAt": "2026-10-20T06:05:59.739Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-10-19T06:14:58.282Z",
+        "fetchedAt": "2026-10-20T06:03:52.873Z",
         "entryCount": 97,
         "sources": [
           {
@@ -258,7 +258,7 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-10-19T06:16:11.895Z",
+        "fetchedAt": "2026-10-20T06:05:59.734Z",
         "articleCount": 3,
         "results": [
           {
@@ -309,9 +309,41 @@
             "warnings": []
           }
         ],
-        "errors": []
+        "errors": [
+          {
+            "source": "setkab",
+            "url": "https://setkab.go.id/feed/",
+            "error": "The operation was aborted due to timeout"
+          },
+          {
+            "source": "setkab",
+            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
+            "error": "The operation was aborted due to timeout"
+          },
+          {
+            "source": "setkab",
+            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
+            "error": "The operation was aborted due to timeout"
+          }
+        ]
       }
     },
-    "errors": []
+    "errors": [
+      {
+        "source": "setkab",
+        "url": "https://setkab.go.id/feed/",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "source": "setkab",
+        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "source": "setkab",
+        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
+        "error": "The operation was aborted due to timeout"
+      }
+    ]
   }
 }

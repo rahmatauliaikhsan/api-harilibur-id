@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-19T06:16:11.895Z",
+  "fetchedAt": "2026-10-20T06:05:59.734Z",
   "articles": [
     {
       "id": "32da4bd49dca",
@@ -9,7 +9,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2025",
       "year": 2025,
       "pubDate": null,
-      "fetchedAt": "2026-10-19T06:15:51.866Z",
+      "fetchedAt": "2026-10-20T06:05:40.468Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -187,7 +187,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
       "year": 2026,
       "pubDate": null,
-      "fetchedAt": "2026-10-19T06:15:58.392Z",
+      "fetchedAt": "2026-10-20T06:05:47.165Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -355,7 +355,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
       "year": 2027,
       "pubDate": null,
-      "fetchedAt": "2026-10-19T06:16:07.842Z",
+      "fetchedAt": "2026-10-20T06:05:56.645Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -522,6 +522,31 @@
     }
   ],
   "rejected": [
+    {
+      "id": "337310c42426",
+      "url": "https://www.kemenkopmk.go.id/kemenko-pmk-perkuat-sinergi-lintas-kementerianlembaga-dalam-penyusunan-skb-pencegahan-dan",
+      "sourceId": "kemenkopmk",
+      "via": "kemenkopmk-feed",
+      "title": "Kemenko PMK Perkuat Sinergi Lintas Kementerian/Lembaga dalam Penyusunan SKB Pencegahan dan Penanganan Kekerasan di Perguruan Tinggi",
+      "year": 2026,
+      "pubDate": "Thu, 15 Oct 2026 07:20:29 +0000",
+      "fetchedAt": "2026-10-20T06:05:22.492Z",
+      "status": "rejected",
+      "isAmendment": false,
+      "counts": {},
+      "warnings": [
+        "tidak_ada_entri_terparse"
+      ],
+      "metadata": {
+        "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
+        "declaredYear": 2026,
+        "numbers": [],
+        "signedAt": null,
+        "declaredCounts": null,
+        "isAmendment": false
+      },
+      "entries": []
+    },
     {
       "id": "337310c42426",
       "url": "https://www.kemenkopmk.go.id/kemenko-pmk-perkuat-sinergi-lintas-kementerianlembaga-dalam-penyusunan-skb-pencegahan-dan",
@@ -1218,5 +1243,21 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "source": "setkab",
+      "url": "https://setkab.go.id/feed/",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
+      "error": "The operation was aborted due to timeout"
+    }
+  ]
 }
