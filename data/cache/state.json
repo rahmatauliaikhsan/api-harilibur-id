@@ -1,10 +1,10 @@
 {
   "community": {
-    "refreshedAt": "2026-10-23T06:03:20.789Z",
+    "refreshedAt": "2026-10-24T05:56:18.663Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-10-23T06:04:31.553Z",
+    "refreshedAt": "2026-10-24T05:57:23.872Z",
     "ok": true
   },
   "errors": [
@@ -190,12 +190,12 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-10-23T06:03:20.219Z",
-    "finishedAt": "2026-10-23T06:04:31.555Z",
+    "startedAt": "2026-10-24T05:56:18.191Z",
+    "finishedAt": "2026-10-24T05:57:23.874Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-10-23T06:03:20.789Z",
+        "fetchedAt": "2026-10-24T05:56:18.663Z",
         "entryCount": 97,
         "sources": [
           {
@@ -258,9 +258,20 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-10-23T06:04:31.553Z",
+        "fetchedAt": "2026-10-24T05:57:23.872Z",
         "articleCount": 3,
         "results": [
+          {
+            "url": "https://www.kemenkopmk.go.id/ciptakan-kampus-aman-kemenko-pmk-matangkan-skb-pencegahan-kekerasan-di-perguruan-tinggi",
+            "sourceId": "kemenkopmk",
+            "via": "kemenkopmk-feed",
+            "year": 2026,
+            "status": "rejected",
+            "counts": {},
+            "warnings": [
+              "tidak_ada_entri_terparse"
+            ]
+          },
           {
             "url": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2025/",
             "sourceId": "setkab",
