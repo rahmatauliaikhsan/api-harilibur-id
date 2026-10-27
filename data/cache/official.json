@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-26T06:18:35.644Z",
+  "fetchedAt": "2026-10-27T06:20:29.904Z",
   "articles": [
     {
       "id": "32da4bd49dca",
@@ -9,7 +9,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2025",
       "year": 2025,
       "pubDate": null,
-      "fetchedAt": "2026-10-26T06:18:14.920Z",
+      "fetchedAt": "2026-10-27T06:20:06.088Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -187,7 +187,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
       "year": 2026,
       "pubDate": null,
-      "fetchedAt": "2026-10-26T06:18:21.141Z",
+      "fetchedAt": "2026-10-27T06:20:13.379Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -355,7 +355,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
       "year": 2027,
       "pubDate": null,
-      "fetchedAt": "2026-10-26T06:18:30.792Z",
+      "fetchedAt": "2026-10-27T06:20:24.155Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -522,6 +522,31 @@
     }
   ],
   "rejected": [
+    {
+      "id": "e43b994ac7a7",
+      "url": "https://www.kemenkopmk.go.id/ciptakan-kampus-aman-kemenko-pmk-matangkan-skb-pencegahan-kekerasan-di-perguruan-tinggi",
+      "sourceId": "kemenkopmk",
+      "via": "kemenkopmk-feed",
+      "title": "Ciptakan Kampus Aman, Kemenko PMK Matangkan SKB Pencegahan Kekerasan di Perguruan Tinggi",
+      "year": 2026,
+      "pubDate": "Fri, 23 Oct 2026 08:53:57 +0000",
+      "fetchedAt": "2026-10-27T06:19:47.724Z",
+      "status": "rejected",
+      "isAmendment": false,
+      "counts": {},
+      "warnings": [
+        "tidak_ada_entri_terparse"
+      ],
+      "metadata": {
+        "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
+        "declaredYear": 2026,
+        "numbers": [],
+        "signedAt": null,
+        "declaredCounts": null,
+        "isAmendment": false
+      },
+      "entries": []
+    },
     {
       "id": "e43b994ac7a7",
       "url": "https://www.kemenkopmk.go.id/ciptakan-kampus-aman-kemenko-pmk-matangkan-skb-pencegahan-kekerasan-di-perguruan-tinggi",
@@ -1318,5 +1343,16 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "source": "setkab",
+      "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
+      "error": "HTTP 500 untuk https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029"
+    }
+  ]
 }
