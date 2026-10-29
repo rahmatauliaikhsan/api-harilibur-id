@@ -1,10 +1,10 @@
 {
   "community": {
-    "refreshedAt": "2026-10-28T06:52:43.109Z",
+    "refreshedAt": "2026-10-29T07:08:59.563Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-10-28T06:54:13.138Z",
+    "refreshedAt": "2026-10-29T07:10:01.160Z",
     "ok": true
   },
   "errors": [
@@ -190,12 +190,12 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-10-28T06:52:42.510Z",
-    "finishedAt": "2026-10-28T06:54:13.141Z",
+    "startedAt": "2026-10-29T07:08:58.039Z",
+    "finishedAt": "2026-10-29T07:10:01.162Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-10-28T06:52:43.109Z",
+        "fetchedAt": "2026-10-29T07:08:59.563Z",
         "entryCount": 97,
         "sources": [
           {
@@ -258,20 +258,9 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-10-28T06:54:13.138Z",
+        "fetchedAt": "2026-10-29T07:10:01.160Z",
         "articleCount": 3,
         "results": [
-          {
-            "url": "https://www.kemenkopmk.go.id/ciptakan-kampus-aman-kemenko-pmk-matangkan-skb-pencegahan-kekerasan-di-perguruan-tinggi",
-            "sourceId": "kemenkopmk",
-            "via": "kemenkopmk-feed",
-            "year": 2026,
-            "status": "rejected",
-            "counts": {},
-            "warnings": [
-              "tidak_ada_entri_terparse"
-            ]
-          },
           {
             "url": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2025/",
             "sourceId": "setkab",
@@ -309,41 +298,9 @@
             "warnings": []
           }
         ],
-        "errors": [
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/feed/",
-            "error": "HTTP 500 untuk https://setkab.go.id/feed/"
-          },
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
-            "error": "The operation was aborted due to timeout"
-          },
-          {
-            "source": "setkab",
-            "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
-            "error": "HTTP 500 untuk https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029"
-          }
-        ]
+        "errors": []
       }
     },
-    "errors": [
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/feed/",
-        "error": "HTTP 500 untuk https://setkab.go.id/feed/"
-      },
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202028",
-        "error": "The operation was aborted due to timeout"
-      },
-      {
-        "source": "setkab",
-        "url": "https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029",
-        "error": "HTTP 500 untuk https://setkab.go.id/?s=SKB%20tiga%20menteri%20hari%20libur%20nasional%20dan%20cuti%20bersama%202029"
-      }
-    ]
+    "errors": []
   }
 }
