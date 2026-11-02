@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T07:37:10.995Z",
+  "fetchedAt": "2026-11-02T07:42:36.684Z",
   "articles": [
     {
       "id": "32da4bd49dca",
@@ -9,7 +9,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2025",
       "year": 2025,
       "pubDate": null,
-      "fetchedAt": "2026-11-01T07:36:47.861Z",
+      "fetchedAt": "2026-11-02T07:42:18.979Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -187,7 +187,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
       "year": 2026,
       "pubDate": null,
-      "fetchedAt": "2026-11-01T07:36:54.095Z",
+      "fetchedAt": "2026-11-02T07:42:24.948Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -355,7 +355,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
       "year": 2027,
       "pubDate": null,
-      "fetchedAt": "2026-11-01T07:37:04.475Z",
+      "fetchedAt": "2026-11-02T07:42:32.235Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -1368,5 +1368,21 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "source": "kemenkopmk",
+      "url": "https://www.kemenkopmk.go.id/rss.xml",
+      "error": "HTTP 403 untuk https://www.kemenkopmk.go.id/rss.xml"
+    },
+    {
+      "source": "kemenkopmk",
+      "url": "https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202028",
+      "error": "HTTP 403 untuk https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202028"
+    },
+    {
+      "source": "kemenkopmk",
+      "url": "https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202029",
+      "error": "HTTP 403 untuk https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202029"
+    }
+  ]
 }
