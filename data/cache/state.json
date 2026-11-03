@@ -1,13 +1,31 @@
 {
   "community": {
-    "refreshedAt": "2026-11-02T07:41:38.280Z",
+    "refreshedAt": "2026-11-03T07:57:05.890Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-11-02T07:42:36.684Z",
+    "refreshedAt": "2026-11-03T07:58:15.132Z",
     "ok": true
   },
   "errors": [
+    {
+      "at": "2026-11-03T07:58:15.132Z",
+      "source": "kemenkopmk",
+      "url": "https://www.kemenkopmk.go.id/rss.xml",
+      "error": "HTTP 403 untuk https://www.kemenkopmk.go.id/rss.xml"
+    },
+    {
+      "at": "2026-11-03T07:58:15.132Z",
+      "source": "kemenkopmk",
+      "url": "https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202028",
+      "error": "HTTP 403 untuk https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202028"
+    },
+    {
+      "at": "2026-11-03T07:58:15.132Z",
+      "source": "kemenkopmk",
+      "url": "https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202029",
+      "error": "HTTP 403 untuk https://www.kemenkopmk.go.id/search?keys=hari%20libur%20nasional%20cuti%20bersama%20tahun%202029"
+    },
     {
       "at": "2026-11-02T07:42:36.684Z",
       "source": "kemenkopmk",
@@ -169,33 +187,15 @@
       "source": "setkab",
       "url": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2026/",
       "error": "The operation was aborted due to timeout"
-    },
-    {
-      "at": "2026-10-14T06:17:25.234Z",
-      "source": "setkab",
-      "url": "https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2026/",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "at": "2026-10-14T06:17:25.234Z",
-      "source": "setneg",
-      "url": "https://www.setneg.go.id/baca/index/pemerintah_tetapkan_hari_libur_nasional_dan_cuti_bersama_tahun_2026",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "at": "2026-10-14T06:17:25.234Z",
-      "source": "setneg",
-      "url": "https://www.setneg.go.id/baca/index/inilah_skb_3_menteri_libur_nasional_dan_cuti_bersama_2027",
-      "error": "The operation was aborted due to timeout"
     }
   ],
   "lastRun": {
-    "startedAt": "2026-11-02T07:41:37.767Z",
-    "finishedAt": "2026-11-02T07:42:36.687Z",
+    "startedAt": "2026-11-03T07:57:05.579Z",
+    "finishedAt": "2026-11-03T07:58:15.134Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-11-02T07:41:38.280Z",
+        "fetchedAt": "2026-11-03T07:57:05.890Z",
         "entryCount": 97,
         "sources": [
           {
@@ -258,7 +258,7 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-11-02T07:42:36.684Z",
+        "fetchedAt": "2026-11-03T07:58:15.132Z",
         "articleCount": 3,
         "results": [
           {
