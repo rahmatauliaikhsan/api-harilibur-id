@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-06T07:57:47.932Z",
+  "fetchedAt": "2026-11-07T07:14:40.681Z",
   "articles": [
     {
       "id": "32da4bd49dca",
@@ -9,7 +9,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2025",
       "year": 2025,
       "pubDate": null,
-      "fetchedAt": "2026-11-06T07:57:31.004Z",
+      "fetchedAt": "2026-11-07T07:14:18.272Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -187,7 +187,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
       "year": 2026,
       "pubDate": null,
-      "fetchedAt": "2026-11-06T07:57:36.850Z",
+      "fetchedAt": "2026-11-07T07:14:27.009Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -355,7 +355,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
       "year": 2027,
       "pubDate": null,
-      "fetchedAt": "2026-11-06T07:57:43.621Z",
+      "fetchedAt": "2026-11-07T07:14:36.655Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -522,6 +522,31 @@
     }
   ],
   "rejected": [
+    {
+      "id": "c71f01ddd65c",
+      "url": "https://www.kemenkopmk.go.id/kemenko-pmk-koordinasikan-penyusunan-skb-untuk-sinkronisasi-pencegahan-dan-penanganan-kekerasan-di",
+      "sourceId": "kemenkopmk",
+      "via": "kemenkopmk-feed",
+      "title": "Kemenko PMK Koordinasikan Penyusunan SKB untuk Sinkronisasi Pencegahan dan Penanganan Kekerasan di Perguruan Tinggi",
+      "year": 2026,
+      "pubDate": "Fri, 06 Nov 2026 23:02:17 +0000",
+      "fetchedAt": "2026-11-07T07:14:07.087Z",
+      "status": "rejected",
+      "isAmendment": false,
+      "counts": {},
+      "warnings": [
+        "tidak_ada_entri_terparse"
+      ],
+      "metadata": {
+        "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
+        "declaredYear": 2026,
+        "numbers": [],
+        "signedAt": null,
+        "declaredCounts": null,
+        "isAmendment": false
+      },
+      "entries": []
+    },
     {
       "id": "e43b994ac7a7",
       "url": "https://www.kemenkopmk.go.id/ciptakan-kampus-aman-kemenko-pmk-matangkan-skb-pencegahan-kekerasan-di-perguruan-tinggi",
