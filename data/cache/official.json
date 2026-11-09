@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-08T07:26:00.998Z",
+  "fetchedAt": "2026-11-09T08:01:07.390Z",
   "articles": [
     {
       "id": "32da4bd49dca",
@@ -9,7 +9,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2025",
       "year": 2025,
       "pubDate": null,
-      "fetchedAt": "2026-11-08T07:25:42.332Z",
+      "fetchedAt": "2026-11-09T08:00:45.456Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -187,7 +187,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
       "year": 2026,
       "pubDate": null,
-      "fetchedAt": "2026-11-08T07:25:50.174Z",
+      "fetchedAt": "2026-11-09T08:00:53.049Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -355,7 +355,7 @@
       "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
       "year": 2027,
       "pubDate": null,
-      "fetchedAt": "2026-11-08T07:25:57.596Z",
+      "fetchedAt": "2026-11-09T08:01:03.473Z",
       "status": "accepted",
       "isAmendment": false,
       "counts": {
@@ -522,6 +522,31 @@
     }
   ],
   "rejected": [
+    {
+      "id": "c71f01ddd65c",
+      "url": "https://www.kemenkopmk.go.id/kemenko-pmk-koordinasikan-penyusunan-skb-untuk-sinkronisasi-pencegahan-dan-penanganan-kekerasan-di",
+      "sourceId": "kemenkopmk",
+      "via": "kemenkopmk-feed",
+      "title": "Kemenko PMK Koordinasikan Penyusunan SKB untuk Sinkronisasi Pencegahan dan Penanganan Kekerasan di Perguruan Tinggi",
+      "year": 2026,
+      "pubDate": "Fri, 06 Nov 2026 23:02:17 +0000",
+      "fetchedAt": "2026-11-09T08:00:38.173Z",
+      "status": "rejected",
+      "isAmendment": false,
+      "counts": {},
+      "warnings": [
+        "tidak_ada_entri_terparse"
+      ],
+      "metadata": {
+        "title": "Hari Libur Nasional dan Cuti Bersama Tahun 2026",
+        "declaredYear": 2026,
+        "numbers": [],
+        "signedAt": null,
+        "declaredCounts": null,
+        "isAmendment": false
+      },
+      "entries": []
+    },
     {
       "id": "c71f01ddd65c",
       "url": "https://www.kemenkopmk.go.id/kemenko-pmk-koordinasikan-penyusunan-skb-untuk-sinkronisasi-pencegahan-dan-penanganan-kekerasan-di",
