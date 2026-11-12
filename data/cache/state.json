@@ -1,10 +1,10 @@
 {
   "community": {
-    "refreshedAt": "2026-11-11T07:45:46.718Z",
+    "refreshedAt": "2026-11-12T08:22:28.035Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-11-11T07:46:49.797Z",
+    "refreshedAt": "2026-11-12T08:23:40.356Z",
     "ok": true
   },
   "errors": [
@@ -190,12 +190,12 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-11-11T07:45:45.796Z",
-    "finishedAt": "2026-11-11T07:46:49.799Z",
+    "startedAt": "2026-11-12T08:22:27.658Z",
+    "finishedAt": "2026-11-12T08:23:40.358Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-11-11T07:45:46.718Z",
+        "fetchedAt": "2026-11-12T08:22:28.035Z",
         "entryCount": 97,
         "sources": [
           {
@@ -258,20 +258,9 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-11-11T07:46:49.797Z",
+        "fetchedAt": "2026-11-12T08:23:40.356Z",
         "articleCount": 3,
         "results": [
-          {
-            "url": "https://www.kemenkopmk.go.id/kemenko-pmk-koordinasikan-penyusunan-skb-untuk-sinkronisasi-pencegahan-dan-penanganan-kekerasan-di",
-            "sourceId": "kemenkopmk",
-            "via": "kemenkopmk-feed",
-            "year": 2026,
-            "status": "rejected",
-            "counts": {},
-            "warnings": [
-              "tidak_ada_entri_terparse"
-            ]
-          },
           {
             "url": "https://setkab.go.id/pemerintah-tetapkan-hari-libur-nasional-dan-cuti-bersama-tahun-2025/",
             "sourceId": "setkab",
