@@ -1,10 +1,10 @@
 {
   "community": {
-    "refreshedAt": "2026-11-23T09:08:24.501Z",
+    "refreshedAt": "2026-11-24T10:58:16.478Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-11-23T09:09:37.154Z",
+    "refreshedAt": "2026-11-24T10:59:25.964Z",
     "ok": true
   },
   "errors": [
@@ -190,13 +190,13 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-11-23T09:08:24.163Z",
-    "finishedAt": "2026-11-23T09:09:37.156Z",
+    "startedAt": "2026-11-24T10:58:16.259Z",
+    "finishedAt": "2026-11-24T10:59:25.966Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-11-23T09:08:24.501Z",
-        "entryCount": 103,
+        "fetchedAt": "2026-11-24T10:58:16.478Z",
+        "entryCount": 97,
         "sources": [
           {
             "id": "guangrei-calendar",
@@ -204,7 +204,7 @@
             "url": "https://raw.githubusercontent.com/guangrei/APIHariLibur_V2/main/calendar.json",
             "ok": true,
             "count": 55,
-            "upstreamUpdated": "20261120 17:05:58"
+            "upstreamUpdated": "20261123 17:05:40"
           },
           {
             "id": "nager-date-id",
@@ -258,7 +258,7 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-11-23T09:09:37.154Z",
+        "fetchedAt": "2026-11-24T10:59:25.964Z",
         "articleCount": 3,
         "results": [
           {
