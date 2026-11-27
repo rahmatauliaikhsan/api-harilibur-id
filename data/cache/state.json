@@ -1,10 +1,10 @@
 {
   "community": {
-    "refreshedAt": "2026-11-26T09:33:19.874Z",
+    "refreshedAt": "2026-11-27T09:42:06.758Z",
     "ok": true
   },
   "official": {
-    "refreshedAt": "2026-11-26T09:34:35.098Z",
+    "refreshedAt": "2026-11-27T09:43:17.799Z",
     "ok": true
   },
   "errors": [
@@ -190,12 +190,12 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-11-26T09:33:18.281Z",
-    "finishedAt": "2026-11-26T09:34:35.100Z",
+    "startedAt": "2026-11-27T09:42:06.261Z",
+    "finishedAt": "2026-11-27T09:43:17.801Z",
     "skipped": [],
     "results": {
       "community": {
-        "fetchedAt": "2026-11-26T09:33:19.874Z",
+        "fetchedAt": "2026-11-27T09:42:06.758Z",
         "entryCount": 97,
         "sources": [
           {
@@ -258,7 +258,7 @@
         "errors": []
       },
       "official": {
-        "fetchedAt": "2026-11-26T09:34:35.098Z",
+        "fetchedAt": "2026-11-27T09:43:17.799Z",
         "articleCount": 3,
         "results": [
           {
